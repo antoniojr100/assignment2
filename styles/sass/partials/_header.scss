@@ -1,0 +1,23 @@
+@use "./variables" as *;
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $tertiary-colour;
+    margin-bottom: 90px;
+    align-items: center;
+    .header-img-container{
+        width: 45%;
+        img{
+            max-width: 100%;
+        }
+    }
+    .header-content{
+        width: 55%;
+        color: $primary-colour;
+        .content-container{
+            margin: 0 auto;
+            width: 65%;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@use "./variables" as *;
+
+.contact-form{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+    .contact-form-container{
+        .terms-condition{
+            display: flex;
+            flex-direction: row;
+            margin-top: 2%;
+        }
+        #send-message{
+            margin-top: 1%;
+            width: 100%;
+        }
+    }
+    label{
+        margin-top: 1%;
+    }
+    textarea{
+        margin-bottom: 3%;
+    }
+    button{
+        margin-top: 2%;
+    }
+    #terms{
+        text-transform: capitalize;
+    }
+}

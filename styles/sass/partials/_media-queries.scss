@@ -1,0 +1,94 @@
+@use "./variables" as *;
+
+@media (max-width: 1500px){
+    .play{
+        .play-container{
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .play{
+        .play-container{
+            width: 75%;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+
+    // Test to see file contents
+    // body{
+    //     background-color: peachpuff;
+    // }
+
+    .play{
+        width: 100%;
+        padding: 50px 100px;
+        .play-container{
+            margin: 0;
+            padding: 50px 100px;
+            height: 80%;
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    /* all of our styles for TABLET devices will go within this breakpoint */
+    header{
+        flex-direction: column;
+    }
+
+    .footer-flex-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-nav{
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .play{
+        width: 100%;
+        padding: 25px 30px;
+        .play-container{
+            margin: 0;
+            padding: 50px 100px;
+            height: 80%;
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    /* all of our styles for MOBILE devices will go within this breakpoint */
+    .nav-bar .wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-gallery .items{
+        width: 100%;
+    }
+    
+    h3{
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    .play{
+        padding: 0px 50px;
+        .play-container{
+            height: 100%;
+            width: 100%;
+            padding: 50px;
+            margin: 0%;
+            a{
+                width: 80%;
+            }
+        }
+    }
+}

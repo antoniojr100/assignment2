@@ -1,0 +1,61 @@
+@use "./variables" as *;
+
+.wrapper{
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+button{
+    color: $primary-colour;
+    background-color: transparent;
+    padding: 18px 36px;
+    border: 2px solid $primary-colour;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+    text-align: center;
+    transition: 0.3s;
+    &:hover{
+        background-color: $primary-colour;
+        color: white;
+    }
+    &:focus{
+        background-color: $primary-colour;
+        color: white;
+    }
+    // Styles for buttons in top nav
+    &.menu-icon{
+        padding: 0;
+        border: 0;
+        transition: 0.3s;
+        &:hover{
+            background-color: transparent;
+        }
+        &:focus{
+            background-color: $primary-colour;
+        }
+    }
+} // Button styling ends
+
+a{
+    &.button{
+        color: $primary-colour;
+        background-color: transparent;
+        border: 2px solid $primary-colour;
+        padding: 18px 36px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        line-height: 1.2rem;
+        text-align: center;
+        transition: 0.3s;
+        &:hover{
+            background-color: $primary-colour;
+            color: $white;
+        }
+        &:focus {
+            background-color: $primary-colour;
+            color: $white;
+        }
+    }   
+}

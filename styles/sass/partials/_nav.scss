@@ -1,0 +1,82 @@
+@use "./variables" as *;
+
+.nav-bar{
+    border-bottom: 10px solid rgba($color: $white, $alpha: 0.08);
+    position: sticky;
+    top: 0;
+    background-color: $white;
+    z-index: 10;
+    padding-top: 35px;
+    // .nav-bar .wrapper{}
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    // .nav-bar .cart-search {}
+    .cart-search{
+        display: flex;
+        .search-icon, .bag{
+            margin-right: 15px;
+        }
+    }
+    // .nav-bar button {}
+    button{
+        display: flex;
+        align-items: flex-start;
+    }
+    // .nav-bar .counter {}
+    .counter{
+        // .nav-bar .counter p {}
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            background-color: $primary-colour;
+            color: $white;
+            border-radius: 50%;
+        }
+    }
+}
+
+//To do: make the slide-out nav work
+.slide-out-nav{
+    padding: 35px 50px;
+    width: 100%;
+    max-width: 506px;
+    height: 100vh;
+    background-color: $primary-colour;
+    color: $white;
+    border-right: 1px solid $secondary-colour;
+    position: fixed;
+    top: 0;
+    left: -506px;
+    // visibility: hidden;
+    // left: 0;
+    // visibility: visible;
+
+    .slide-out-nav.active{
+        left: 0;
+        visibility: visible;
+        transition: 0.8s;
+        z-index: 20;
+    }
+
+    .button-container{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .main-menu a{
+        font-family: $heading-font;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        color: rgba($color: $white, $alpha: 1);
+        &:hover{
+            color: rgba($color: $white, $alpha: 0.5);
+        }
+        &:focus{
+            color: rgba($color: $white, $alpha: 0.5);
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@use "./variables" as *;
+
+.contact-header{
+    width: 100%;
+    .contact-header-container{
+        margin: 0 auto;
+        background-color: $secondary-colour;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

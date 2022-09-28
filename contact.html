@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <nav class="nav-bar">
+		<div class="wrapper">
+			<button class="menu-icon">
+				<img src="./assets/menu-button.svg" alt="open slide-out navigation" class="menu-icon">
+			</button>
+
+			<a href="./index.html">
+				<h1>Toybox</h1>
+			</a>
+
+			<div class="cart-search">
+				<button class="menu-icon">
+					<img src="./assets/search.svg" alt="search icon" class="search-icon">
+				</button> 
+				<a href="#" class="bag">
+					<img src="./assets/shop-bag.svg" alt="shopping bag icon" class="bag-icon">
+				</a>
+				<div class="counter">
+					<!-- <button>0</button> -->
+					<p>0</p>
+				</div> <!-- .counter Ends--> 
+			</div> <!-- .cart-search Ends -->
+		</div> <!-- .wrapper Ends-->
+
+        <div class="slide-out-nav">
+			<div class="button-container">
+				<button>
+					<img src="./assets/menu-close.svg" alt="close navigation">
+				</button>
+			</div> <!-- .button-container Ends -->
+			<ul class="main-menu">
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul> <!-- .main-menu Ends -->
+		</div> <!-- .slide-out-nav Ends-->
+	</nav> <!-- .nav-bar Ends-->
+
+    <header class="contact-header">
+        <div class="contact-header-container wrapper">
+            <h5>Contact</h5>
+            <h3>We're here to help</h3>
+            <p>Any other questions? Reach out at support@toybox.io</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="contact-form wrapper">
+            <form action="contact-form-container" class="contact-form">
+                <label for="user-name">Name</label>
+                <input type="text" id="user-name">
+
+                <label for="user-surname">Surname</label>
+                <input type="text" id="user-surname">
+
+                <label for="user-email">Email</label>
+                <input type="text" id="user-email">
+
+                <label for="user-phone">Phone</label>
+                <input type="text" id="user-phone">
+
+                <label for="contacting-reason">Reason for contacting</label>
+                <input type="text" id="contacting-reason">
+
+                <label for="message">Message for me</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <div class="terms-conditions">
+                    <input type="checkbox" id="terms" required>
+                    <label for="">I agree to the Terms & Conditions</label>
+                </div>
+
+                <button type="submit" id="send-message">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer-flex-container">
+                <a href="#" class="logo">
+                    <h4>Toybox</h4>
+                </a>
+                <div class="footer-nav">
+                    <nav>
+                        <ul class="footer-shop">
+                            <li>
+                                <h5>Shop</h5>
+                            </li>
+                            <li>
+                                <a href="#">Safari</a>
+                            </li>
+                            <li>
+                                <a href="#">Ocean</a>
+                            </li>
+                            <li>
+                                <a href="#">Dinos</a>
+                            </li>
+                            <li>
+                                <a href="#">Sale</a>
+                            </li>
+                        </ul> <!-- .footer-shop Ends-->
+                        <ul class="footer-about">
+                            <li>
+                                <h5>About</h5>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">News</a>
+                            </li>
+                            <li>
+                                <a href="#">Legal</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul> <!-- .footer-about Ends-->
+                        <ul class="footer-template">
+                            <li>
+                                <h5>Template</h5>
+                            </li>
+                            <li>
+                                <a href="#">Style Guide</a>
+                            </li>
+                            <li>
+                                <a href="#">Licenses</a>
+                            </li>
+                            <li>
+                                <a href="#">Changelog</a>
+                            </li>
+                        </ul> <!-- .footer-template Ends-->
+                    </nav> <!-- .footer-nav Ends-->
+                </div> <!-- .footer-nav Ends-->
+            </div> <!-- .footer-flex-container Ends-->
+        </div> <!-- .wrapper Ends-->
+
+
+    </footer> <!-- footer Ends-->
+	<script src="./script.js"></script>
+</body>
+</html>

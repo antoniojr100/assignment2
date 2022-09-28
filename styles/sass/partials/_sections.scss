@@ -1,0 +1,74 @@
+@use "./variables" as *;
+
+.category-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .items{
+        width: 40%;
+        padding: 45px;
+        margin: 50px 25px;
+        border-radius: 10%;
+        img{
+            max-width: 100%;
+            border-radius: 10%;
+            margin: 0 auto 20px;
+        }
+        transition: 0.2s ease;
+        &:hover{
+            transform: scale(0.95);
+        }
+        &:focus{
+            transform: scale(0.95);
+        }
+    }
+    .item1 {
+        background-color: $quinary-colour;
+    }
+
+    .item2 {
+        background-color: $secondary-colour;
+    }
+
+    .item3 {
+        background-color: $tertiary-colour;
+    }
+
+    .item4 {
+        background-color: $quaternary-colour;
+    }
+}
+
+// section
+.play{
+    background-image: url(../assets/background-image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100vw;
+    padding: 1% 0;
+    display: flex;
+    justify-content: center;
+    .play-container{
+        background-color: $white;
+        margin: 2% auto;
+        padding: 50px ;
+        height: 40%;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 20px solid $pastel-blue;
+        h5,
+        h3,
+        a{
+            text-align: center;
+        }
+        a{
+            background-color: $primary-colour;
+            color: $white;
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+}
